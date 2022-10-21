@@ -20,7 +20,7 @@
     font-size: 7px;
     margin-#{$left}: 5.2px;
     -moz-osx-font-smoothing: grayscale;
-    content: $icon-down-arrow;
+    //content: $icon-down-arrow;
   }
 }
 
@@ -115,7 +115,7 @@
 
     @include media-breakpoint-down(sm){
       flex-direction: column;
-      
+
       @at-root .heading-2 {
         margin-bottom: 15px!important;
       }
