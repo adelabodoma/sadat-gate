@@ -1,0 +1,428 @@
+%animateCard {
+  transition: $transition-base;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.why-sca {
+  padding: $section-gap 0;
+  background-color: $section-background;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+
+  &__statistics {
+    padding: 30px;
+    background-color: #3EB562;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    #{$left}: -10px;
+
+    h2 {
+      font-size: rem(48);
+      font-weight: bold;
+      color: $color-white;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      font-size: rem(16);
+      color: $color-white;
+      font-weight: 100;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    position: relative;
+  }
+
+  &__brief {
+    margin: 30px 0;
+    line-height: 40px;
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+
+    .heading--1 {
+      margin: 20px 0;
+    }
+
+  }
+}
+
+.membership {
+  text-align: center;
+  background-color: $primary-color;
+  padding: $section-gap 0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+
+  * {
+    color: $color-white;
+  }
+
+  &__cards {
+    margin-top: 50px;
+
+    &__wrapper {
+      //height: 100%;
+    }
+
+    &__card {
+      padding: 30px 20px;
+      border-radius: 10px;
+      background-color: #15655c;
+      height: 100%;
+      transition: all .5s ease-in-out;
+      border-top: 3px solid transparent;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        background-image: url(../img/shape.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 180px;
+        content: "";
+        position: absolute;
+        #{$left}: 0px;
+        top: 0;
+        transform: translate(44px, -17px) rotate(-90deg);
+      }
+
+      &__heading {
+        font-weight: 100;
+      }
+
+      &__icon {
+        font-size: rem(50);
+        color: $color-white;
+        margin-bottom: 20px;
+        display: block;
+
+        &::before {
+          color: currentColor;
+        }
+      }
+
+      &:hover {
+        background-color: $color-white;
+        cursor: pointer;
+        border-color: #3EB562;
+
+        &::before {
+          display: none;
+        }
+
+        .membership__cards__card__heading, .membership__cards__card__icon {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 60px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
+}
+
+.services {
+  padding: $section-gap 0;
+  background-color: $section-background;
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+    margin-bottom: 30px;
+  }
+
+  &__card {
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: $color-white;
+    box-shadow: $main-box-shadow;
+    height: 100%;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    min-height: 208px;
+    @extend %animateCard;
+
+    &:before {
+      background-image: url(../img/shape.png);
+      background-repeat: no-repeat;
+      width: 280px;
+      height: 280px;
+      content: "";
+      position: absolute;
+      #{$left}: 0px;
+      top: -80px;
+      transition: all .5s ease-in-out;
+      transform: translate(44px, -17px) rotate(-90deg);
+
+    }
+
+    &__icon {
+      font-size: rem(40);
+      color: #3EB562;
+
+      &::before {
+        color: currentColor;
+      }
+
+    }
+
+    &__info {
+      margin-inline-start: 20px;
+    }
+
+    &__title {
+      font-size: rem(16);
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 400;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      //&::before {
+      //  transform: rotate(90deg);
+      //  #{$left}: unset;
+      //  #{$right}: 0;
+      //  bottom: 0;
+      //  top: unset;
+      //}
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+
+    &__header {
+      flex-direction: column;
+    }
+  }
+}
+
+.news {
+  padding: $section-gap 0;
+  background-color: #cde2e0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    display: flex;
+    margin-bottom: 60px;
+    @extend %animateCard;
+    border-radius: 10px;
+
+    &__image {
+      border-radius: 10px;
+    }
+
+    &__info {
+      margin-inline-start: 20px;
+      padding: 10px;
+    }
+
+    &__date {
+      color: #646A69;
+      font-size: rem(14);
+      margin-bottom: 10px;
+
+      &__icon {
+        color: #3EB562;
+        margin-inline-end: 5px;
+
+        &::before {
+          color: currentColor;
+        }
+      }
+    }
+
+    &__title {
+      font-size: rem(16);
+      margin-bottom: 20px;
+      font-weight: 600;
+      display: block;
+    }
+
+    &__link {
+      display: block;
+      color: #0C574F;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: $color-white;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+
+    &__header {
+      flex-direction: column;
+    }
+
+    &__card {
+      flex-direction: column;
+
+      &__image {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.activities {
+  background-color: $primary-color;
+  padding: $section-gap 0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 95% 10%;
+
+  * {
+    color: $color-white;
+  }
+
+  &__card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #15655c;
+    margin-bottom: 30px;
+    @extend %animateCard;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      background-image: url(../img/shape.png);
+      background-repeat: no-repeat;
+      width: 140px;
+      height: 140px;
+      content: "";
+      position: absolute;
+      #{$left}: 0px;
+      top: 0;
+      transform: rotate(-90deg);
+      transition: all .5s ease-in-out;
+    }
+
+    &__title {
+      font-size: rem(18);
+      margin-bottom: 20px;
+    }
+
+    &__date {
+      font-size: rem(14);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-weight: 100;
+
+      &__icon {
+        color: #3EB562;
+        margin-inline-end: 10px;
+        font-size: rem(20);
+
+        &::before {
+          color: currentColor;
+        }
+      }
+    }
+
+
+    &:hover {
+      background-color: $color-white;
+
+      //&::before {
+      //  transform: rotate(180deg);
+      //  #{$left}: unset;
+      //  #{$right}: 0;
+      //
+      //}
+
+      *:not(i) {
+        color: $text-color;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
+
+}
+
+.contacts {
+  padding: $section-gap 0;
+  background-color: #cde2e0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+
+  &__card {
+    &__title {
+      font-size: rem(48);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: rem(16);
+      margin-bottom: 40px;
+      font-weight: 500;
+      color: #434847;
+      line-height: 30px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+
+    &__image {
+      width: 100%;
+    }
+    &__card {
+      &__title {
+        font-size: rem(25);
+      }
+    }
+  }
+}

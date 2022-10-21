@@ -1,0 +1,89 @@
+.btn {
+  border: 1px solid $secondary-color;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &--primary {
+    background: $color-white;
+    color: #0C574F;
+    border-color: $color-white;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $color-white;
+      border-color: $primary-color;
+
+    }
+  }
+
+  &--secondary {
+    background: $primary-color;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $primary-color;
+    }
+  }
+
+
+  &--outline {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      border-color: $primary-color;
+      background-color: $primary-color;
+      color: $color-white;
+    }
+  }
+
+  &--outline--white {
+    background-color: transparent;
+    border-color: $color-white;
+    color: $color-white;
+
+    &:hover {
+      border-color: $color-white;
+      background-color: $color-white;
+      color: $primary-color;
+    }
+  }
+}
+
+
+.utl-btn-secondary {
+  background-color: $color-white;
+  color: $primary-color;
+  box-shadow: $main-box-shadow;
+  border: 0;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+
+.utl-btn-outline-primary {
+  color: $primary-color;
+  border: 1px solid $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $color-white;
+  }
+}
+
+.utl-btn-outline-white {
+  color: $color-white;
+  border: 1px solid $color-white;
+}
+
+.utl-btn-bg-white {
+  // color: $color-white;
+  background-color: $color-white;
+  border: 1px solid $color-white;
+}
