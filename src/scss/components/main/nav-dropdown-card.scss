@@ -1,0 +1,15 @@
+.co-dropdown-card {
+  @include flex(center);
+  width: 227px;
+
+  &__image {
+    margin-inline-end: 15px;
+    width: 50px;
+  }
+
+  &__label {
+    font-size: rem(14);
+    color: #434549;
+    font-weight: 600;
+  }
+}

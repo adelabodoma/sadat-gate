@@ -28,7 +28,6 @@
     }
   }
 
-
   &--outline {
     background-color: transparent;
     border-color: $primary-color;
@@ -52,38 +51,13 @@
       color: $primary-color;
     }
   }
-}
 
-
-.utl-btn-secondary {
-  background-color: $color-white;
-  color: $primary-color;
-  box-shadow: $main-box-shadow;
-  border: 0;
-
-  &:hover {
-    color: $primary-color;
+  &--link {
+    &--primary {
+      font-size: rem(14);
+      font-weight: 600;
+      color: $primary-color;
+    }
   }
 }
 
-
-.utl-btn-outline-primary {
-  color: $primary-color;
-  border: 1px solid $primary-color;
-
-  &:hover {
-    background-color: $primary-color;
-    color: $color-white;
-  }
-}
-
-.utl-btn-outline-white {
-  color: $color-white;
-  border: 1px solid $color-white;
-}
-
-.utl-btn-bg-white {
-  // color: $color-white;
-  background-color: $color-white;
-  border: 1px solid $color-white;
-}
