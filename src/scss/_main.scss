@@ -12,7 +12,11 @@
 
 // COMPONENT
 @import "components/sahred/social-links", "components/sahred/scroll",
-"components/sahred/dropdown", "components/sahred/spinner", "components/sahred/buttons", "components/main/nav-dropdown-card";
+"components/sahred/dropdown", "components/sahred/spinner",
+"components/sahred/buttons", "components/main/nav-dropdown-card",
+"components/main/category", "components/main/section-header",
+"components/main/card", "components/main/divider",
+"components/main/news";
 
 // PAGES
 @import "pages/home";

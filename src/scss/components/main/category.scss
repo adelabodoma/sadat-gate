@@ -1,0 +1,18 @@
+.co-category {
+  padding: 20px;
+  background-color: $color-white;
+  border-radius: $main-border-radius;
+  text-align: center;
+  height: 100%;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: rem(14);
+    color: $text-color-1;
+    display: block;
+    font-weight: 500;
+  }
+}
