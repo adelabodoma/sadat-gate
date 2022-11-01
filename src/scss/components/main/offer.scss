@@ -1,0 +1,48 @@
+.co-offer {
+  text-align: center;
+
+  &__name {
+    font-size: rem(14);
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    color: $color-black;
+  }
+
+  &__image {
+    display: inline-block;
+  }
+
+  &__prices {
+    margin-bottom: 5px;
+
+    &__current {
+      color: $text-color-red;
+      font-weight: 600;
+      font-size: rem(13);
+      margin-inline-end: 5px;
+      display: inline-block;
+    }
+
+    &__before {
+      display: inline-block;
+      color: $text-color-grey;
+      font-size: rem(12);
+      font-weight: 400;
+      text-decoration: line-through;
+    }
+  }
+
+  &__validity {
+    @include flex(center, center);
+
+    &__icon {
+    margin-inline-end: 5px;
+    }
+
+    &__label {
+      color: $text-color-grey;
+      font-weight: 400;
+    }
+  }
+}

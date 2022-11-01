@@ -1,0 +1,55 @@
+.co-estate {
+  @include flex(flex-start, space-between);
+
+  &__image {
+    margin-inline-end: 15px;
+    border-radius: $main-border-radius;
+
+  }
+
+  &__title {
+    font-size: rem(14);
+    font-weight: 500;
+    margin-bottom: 10.5px;
+    display: block;
+    margin-inline-end: 20px;
+  }
+
+  &__date, &__location {
+    font-size: rem(12);
+    color: $text-color-grey;
+    margin-bottom: 15.5px;
+    @include flex(center);
+
+    &__icon {
+      margin-inline-end: 6px;
+    }
+
+    &__label {
+    }
+
+  }
+
+  &__header {
+    @include flex(flex-start, space-between)
+  }
+
+  &__status {
+    padding: 3px 8px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-size: rem(11);
+    font-weight: 400;
+    display: inline-block;
+
+    &--primary {
+      border-color: $text-color-green;
+      color: $text-color-green;
+    }
+
+    &--secondary {
+      border-color: $text-color-red;
+      color: $text-color-red;
+    }
+  }
+}

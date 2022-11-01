@@ -1,0 +1,26 @@
+.co-tag {
+  padding: 3px 8px;
+  color: $primary-color;
+  font-size: rem(12);
+  font-weight: 400;
+  border-radius: 50px;
+  background: rgba(41, 84, 222, 0.05);
+  display: inline-block;
+
+  &__icon {
+    margin-inline-end: 5.5px;
+    vertical-align: middle;
+  }
+
+  &__label {
+
+  }
+
+  &__list {
+    @include flex(center);
+
+    &__item:not(:last-child) {
+      margin-inline-end: 10px;
+    }
+  }
+}
