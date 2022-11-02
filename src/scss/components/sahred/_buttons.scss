@@ -40,6 +40,17 @@
     }
   }
 
+  &--small {
+    padding: 9.5px 10px;
+  }
+
+  &--with-icon {
+    @include flex(center);
+    .icon {
+      margin-inline-end: 5px;
+    }
+  }
+
   &--outline--white {
     background-color: transparent;
     border-color: $color-white;

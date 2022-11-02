@@ -1,0 +1,44 @@
+.co-job {
+  @include flex(flex-start);
+
+  &__image {
+    margin-inline-end: 15px;
+    border-radius: $main-border-radius;
+
+  }
+
+  &__title {
+    font-size: rem(14);
+    font-weight: 500;
+    margin-bottom: 5.5px;
+    display: block;
+  }
+
+  &__date {
+    font-size: rem(12);
+    color: $text-color-grey;
+    margin-bottom: 15.5px;
+    @include flex(center);
+
+    &__icon {
+      margin-inline-end: 6px;
+    }
+
+    &__label {
+    }
+
+  }
+
+  &__header {
+    &__wrapper {
+      @include flex(flex-start, space-between)
+    }
+  }
+
+  &__package {
+    color: $text-color-red;
+    font-weight: 600;
+    font-size: rem(14);
+    margin-bottom: 13px;
+  }
+}
