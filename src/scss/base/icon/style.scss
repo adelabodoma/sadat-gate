@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?eywu3r');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?eywu3r#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?eywu3r') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?eywu3r') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?eywu3r##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?o3jazk');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?o3jazk#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?o3jazk') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?o3jazk') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?o3jazk##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-twitter-1 {
+  &:before {
+    content: $icon-twitter-1; 
+  }
+}
+.icon-linkedin-1 {
+  &:before {
+    content: $icon-linkedin-1; 
+  }
+}
+.icon-instagram-1 {
+  &:before {
+    content: $icon-instagram-1; 
+  }
+}
 .icon-Property-1Tag1 {
   &:before {
     content: $icon-Property-1Tag1; 
@@ -690,6 +705,11 @@
 .icon-Whatsapp {
   &:before {
     content: $icon-Whatsapp; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
   }
 }
 

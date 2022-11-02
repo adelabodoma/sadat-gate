@@ -1,4 +1,20 @@
 jQuery(document).ready(function ($) {
+  const sliderNx = document.querySelector(".slider .swiper-button-next");
+  const sliderPr = document.querySelector(".slider .swiper-button-prev");
+  const sliderPagination = document.querySelector(".post-slider .swiper-pagination");
+
+  new Swiper(".header__swiper__slides", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    pagination: {
+      el: '.header__swiper .swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
 
   // REMOVE SPINNER
@@ -28,7 +44,7 @@ jQuery(document).ready(function ($) {
   };
 
 
-  // WOW JS 
+  // WOW JS
   wow = new WOW(
     {
       boxClass: 'wow',      // default
