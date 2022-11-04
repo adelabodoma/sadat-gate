@@ -56,4 +56,13 @@
       color: $text-color-red;
     }
   }
+
+  @include media-breakpoint-down(sm){
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 }

@@ -10,6 +10,11 @@
     background-color: $primary-color;
     border-radius: 0 0 30px 30px;
     color: $color-white;
+
+    @include media-breakpoint-down(sm) {
+      border-radius: 0;
+      padding: 15px 0;
+    }
   }
 
   &__logo {
@@ -76,6 +81,12 @@
         }
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      &__items {
+        display: none;
+      }
+    }
   }
 
   &__language-switcher {
@@ -91,9 +102,26 @@
     }
   }
 
+
+  &__toggle {
+    display: none;
+
+    &__icon {
+      font-size: rem(30);
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: inline-block;
+    }
+  }
+
   &__auth {
     .btn:not(:last-child) {
       margin-inline-end: 15px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
     }
   }
 
@@ -101,6 +129,10 @@
     height: calc(100vh - 193px); // 113 nav height + 80 main margin
     @include flex(center);
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      height: calc(100vh - 76px); // 76 nav height
+    }
   }
 
   &__swiper {
@@ -157,6 +189,12 @@
       margin-bottom: 40px;
       color: $color-white;
       line-height: 26px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      &__navigation {
+        display: none;
+      }
     }
   }
 }

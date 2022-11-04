@@ -14,6 +14,11 @@ jQuery(document).ready(function ($) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      499: {
+        navigation: false
+      }
+    }
   });
 
 

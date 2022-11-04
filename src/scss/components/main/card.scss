@@ -3,4 +3,8 @@
   background-color: $color-white;
   border-radius: $main-border-radius;
 
+
+  @include media-breakpoint-down(sm){
+    padding: 15px;
+  }
 }

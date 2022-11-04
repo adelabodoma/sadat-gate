@@ -15,4 +15,9 @@
     display: block;
     font-weight: 500;
   }
+
+  @include media-breakpoint-down(sm){
+    margin-bottom: 20px;
+    height: auto;
+  }
 }

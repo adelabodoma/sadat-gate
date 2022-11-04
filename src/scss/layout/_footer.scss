@@ -41,4 +41,29 @@
     margin-top: 20px;
     font-weight: 400;
   }
+
+
+  @include media-breakpoint-down(sm) {
+    border-radius: 0;
+    padding: 15px;
+    margin-top: 40px;
+
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__nav {
+      &__items {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px 0;
+
+        &__item:not(:last-child) {
+          margin-inline-end: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

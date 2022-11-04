@@ -1,3 +1,7 @@
 .main {
   margin-top: -82px;
+
+  @include media-breakpoint-down(sm){
+    margin-top: 20px;
+  }
 }

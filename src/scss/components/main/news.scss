@@ -34,4 +34,13 @@
     font-weight: 600;
     font-size: rem(14);
   }
+
+  @include media-breakpoint-down(sm){
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 }

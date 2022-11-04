@@ -38,4 +38,21 @@
       width: 100%;
     }
   }
+
+  @include media-breakpoint-down(sm){
+    flex-direction: column;
+
+    &__image {
+      margin-bottom: 20px;
+    }
+
+    &__header {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
 }
