@@ -6,19 +6,21 @@ jQuery(document).ready(function ($) {
   new Swiper(".header__swiper__slides", {
     slidesPerView: 1,
     spaceBetween: 50,
+    autoplay: {
+      delay: 5000,
+    },
+    allowTouchMove: false,
+    observer: true,
+    observeParents: true,
     pagination: {
-      el: '.header__swiper .swiper-pagination',
+      el: '.header__swiper .header__swiper__container .swiper-pagination',
       type: 'bullets',
+      clickable: true
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.header__swiper__navigation .swiper-button-next',
+      prevEl: '.header__swiper__navigation .swiper-button-prev',
     },
-    breakpoints: {
-      499: {
-        navigation: false
-      }
-    }
   });
 
 
