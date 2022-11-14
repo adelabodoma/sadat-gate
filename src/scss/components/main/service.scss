@@ -1,0 +1,47 @@
+.co-service {
+  padding: 30px;
+  border-radius: $main-border-radius;
+  background-color: $color-white;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: rem(18);
+    font-weight: 500;
+    transition: $transition-base;
+  }
+
+  &__link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    display: inline-block;
+    @include flex(center, center);
+    margin: 0 auto;
+    transition: $transition-base;
+
+    &__icon {
+      font-size: rem(18);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .co-service__title {
+      color: $primary-color;
+    }
+
+    .co-service__link {
+      color: $color-white;
+      background-color: $primary-color;
+    }
+  }
+}

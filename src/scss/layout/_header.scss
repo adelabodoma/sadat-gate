@@ -15,6 +15,12 @@
       border-radius: 0;
       padding: 15px 0;
     }
+
+    &__page-title {
+      font-size: rem(50);
+      font-weight: 600;
+      color: $color-white;
+    }
   }
 
   &__logo {
@@ -196,5 +202,11 @@
         display: none;
       }
     }
+  }
+
+
+  &.internal-pages {
+    height: 323px;
+    margin-bottom: 80px;
   }
 }
