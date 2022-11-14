@@ -20,10 +20,12 @@
 'components/main/estate', 'components/main/tag',
 'components/main/job', 'components/main/deaths',
 'components/main/social', 'components/main/scroll-top',
-'components/sahred/slider', 'components/sahred/breadcrumb', 'components/main/service';
+'components/sahred/slider', 'components/sahred/breadcrumb',
+'components/main/service', 'components/main/pagination',
+'components/main/comment', 'components/sahred/form';
 
 // PAGES
-@import "pages/home";
+@import "pages/home", "pages/news";
 
 // LAYOUT
 @import "layout/header", "layout/footer";

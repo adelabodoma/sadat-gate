@@ -9,4 +9,8 @@
   border: 1px solid #F2F3F5;
   display: block;
   margin: 20px 0;
+
+  &--dark {
+    border-color: #BBBDC1;
+  }
 }

@@ -1,0 +1,46 @@
+.news {
+  &__details {
+    margin-bottom: 20px;
+    &__date {
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      font-size: rem(32);
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    &__image {
+      width: 100%;
+      margin-bottom: 40px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    &__paragraph {
+      font-size: rem(16);
+      font-weight: 400;
+      margin-bottom: 40px;
+      line-height: 26px;
+    }
+
+    &__comments {
+      &__title {
+        font-size: rem(18);
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__form {
+      margin-top: 40px;
+
+      &__title {
+        font-size: rem(18);
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

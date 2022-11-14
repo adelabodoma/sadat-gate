@@ -12,6 +12,10 @@ body {
 body {
   overflow: hidden;
   background-color: #E5E5E5;
+
+  &.light {
+    background-color: #F2F4F7;
+  }
 }
 
 html {

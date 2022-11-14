@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../../assets/css/style-ltr.min.css"/>
+    <title>SCA - News-Details</title>
+</head>
+
+<body class="light">
+<button id="gotToTopButton" class="co-scroll-top" title="Go to top">
+    <i class="icon icon-arrow_dropdown"></i>
+</button>
+
+<div class="loader">
+    <div class="loader__item">
+        <img src="../../assets/images/Logo/logo-white.png" alt="Logo"/>
+        <div></div>
+    </div>
+
+</div>
+<!-- HEADER SECTION START -->
+<header class="header header-no-breadcrumb">
+    <div class="header__top">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__logo">
+                    <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+                </a>
+                <ul class="header__nav__items">
+                    <li class="header__nav__items__item">
+                        <a href=""
+                           class="header__nav__items__item__link header__nav__items__item__link--active">Home</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link" type="button" id="service"
+                           data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span>Services</span>
+                            <i class="icon icon-arrow_dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu header__nav__items__item__dropdown" aria-labelledby="service">
+                            <h2 class="header__nav__items__item__dropdown__heading">Service</h2>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/map.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">City Guide</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/Jobs.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Jobs</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/News.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">News</h2>
+                                </a>
+                            </div>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/real-estates.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Real Estates</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/deaths.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Deaths</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/special-offers.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Special Offers And Discounts</h2>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn--link--primary">View All Services</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">About</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link header__nav__items__item__link--search">
+                            <i class="icon icon-Search"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__language-switcher">
+                    <a href="#" class="header__language-switcher__link"
+                       type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <img src="../../assets/images/Flag/usa.png" alt="USA">
+                        <span class="header__language-switcher__link__label">English</span>
+                        <i class="icon icon-arrow_dropdown"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="changeLang">
+                        <a class="dropdown-item" href="#">
+                            <span>عربي</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__auth">
+                    <button class="btn btn--outline--white">Create New Account</button>
+                    <button class="btn btn--primary">Login</button>
+                </div>
+                <a href="" class="header__toggle">
+                    <i class="icon icon-Menu header__toggle__icon"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+    </div>
+</header>
+<!-- HEADER SECTION END -->
+
+<!--  MAIN SECTION START   -->
+<main class="master">
+    <div class="container">
+        <section class="news">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="news__details">
+                        <h2 class="co-news__date news__details__date">
+                            <i class="icon icon-calender co-news__date__icon"></i>
+                            <span class="co-news__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                        </h2>
+                        <h1 class="news__details__title">
+                            Housing Minister: 3,200 housing units for low-income people are being implemented in Sadat
+                            City
+                        </h1>
+                        <img class="news__details__image" src="../../assets/images/News/details.png" alt="details">
+                        <p class="news__details__paragraph">
+                            In 5 neighborhoods to serve 4584 residential plots of land, and Al-Kawthar district with 6
+                            neighborhoods to serve 4356 residential plots of social housing. Engineer Rajab Salman
+                            indicated that in the sewage and water sector, a plant for separating industrial and human
+                            sewage is underway, with a capacity of 25 thousand m 3 / day, at a cost of about 65 million
+                            pounds, and the implementation rate is 85%, explaining that the station is a starting point
+                            for developing the city’s sewage system and will work To receive the drainage of the
+                            industrial areas shared with the residential areas in the drainage network, which are the
+                            first, second, third and fourth industrial areas, and from there to the oxidation pond,
+                            passing through the heavy industries drainage lift station. And he said: undefined A 1400 mm
+                            diameter regression line with a length of 12 km is also underway to transfer the drainage of
+                            the new neighborhoods (Al-Zaytoun – Al-Nakhil – Al-Rawda – Al-Rayhan) up to the oxidation
+                            pond and the implementation rate is 92%.
+                        </p>
+                        <p class="news__details__paragraph">
+                            The new and supporting the city as a whole, and a dual line 1000 mm diameter conveying
+                            turbid water with a length of 19 km. The head of the agency pointed out that in the
+                            electricity sector, the implementation of a transformer station in the residential extension
+                            area with a capacity of 525 MVA is underway, and the power plant of the Eighth Industrial
+                            Zone with a capacity of 525 MVA is underway, and it will serve 1076 industrial plots of land
+                            in the city.
+                        </p>
+                        <div class="row m-b-40">
+                            <div class="col-md-6">
+                                <img class="news__details__image mb-0 h-100"
+                                     src="../../assets/images/News/details-1.png" alt="details">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="news__details__image" src="../../assets/images/News/details-2.png"
+                                     alt="details">
+                                <img class="news__details__image mb-0" src="../../assets/images/News/details-3.png"
+                                     alt="details">
+                            </div>
+                        </div>
+                        <p class="news__details__paragraph">
+                            Among the service projects being implemented in social housing areas in Sadat City: a basic
+                            education school with a capacity of 42 classrooms in Al-Fardous district, with an
+                            implementation rate of 67%, with a value of about 16 million pounds, and two commercial
+                            markets in Al-Fardous districtundefined It includes 16 shops with an implementation rate of
+                            54% with investments of about 21 million pounds, a triple playground with an implementation
+                            rate of 92%, and a basic education school with a capacity of 42 classrooms in the
+                            residential area 26, with an implementation rate of 70%, with an investment value of about
+                            15 million pounds. For his part, Engineer Ragab Salman, Head of Sadat City Authority, added
+                            that in the utilities sector: the implementation of utility networks (roads - water -
+                            sewage) for the eighth industrial zone is underway to serve 1076 industrial plots of land,
+                            with a 95% implementation rate, at a value of 178.7 million pounds, and Al-Fardous
+                            district. </p>
+                        <img class="news__details__image" src="../../assets/images/News/details.png" alt="details">
+                        <p class="news__details__paragraph">
+                            In 5 neighborhoods to serve 4584 residential plots of land, and Al-Kawthar district with 6
+                            neighborhoods to serve 4356 residential plots of social housing. Engineer Rajab Salman
+                            indicated that in the sewage and water sector, a plant for separating industrial and human
+                            sewage is underway, with a capacity of 25 thousand m 3 / day, at a cost of about 65 million
+                            pounds, and the implementation rate is 85%, explaining that the station is a starting point
+                            for developing the city’s sewage system and will work To receive the drainage of the
+                            industrial areas shared with the residential areas in the drainage network, which are the
+                            first, second, third and fourth industrial areas, and from there to the oxidation pond,
+                            passing through the heavy industries drainage lift station. And he said: undefined A 1400 mm
+                            diameter regression line with a length of 12 km is also underway to transfer the drainage of
+                            the new neighborhoods (Al-Zaytoun – Al-Nakhil – Al-Rawda – Al-Rayhan) up to the oxidation
+                            pond and the implementation rate is 92%.
+                        </p>
+                        <p class="news__details__paragraph">
+                            The new and supporting the city as a whole, and a dual line 1000 mm diameter conveying
+                            turbid water with a length of 19 km. The head of the agency pointed out that in the
+                            electricity sector, the implementation of a transformer station in the residential extension
+                            area with a capacity of 525 MVA is underway, and the power plant of the Eighth Industrial
+                            Zone with a capacity of 525 MVA is underway, and it will serve 1076 industrial plots of land
+                            in the city.
+                        </p>
+                        <span class="co-divider-line co-divider-line--dark"></span>
+                        <div class="news__details__comments">
+                            <h2 class="news__details__comments__title">
+                                Comments (2)
+                            </h2>
+                            <div class="co-comment">
+                                <img class="co-comment__avatar" src="../../assets/images/News/comment.png" alt="Comment">
+                                <div class="co-comment__info">
+                                    <h2 class="co-comment__author">Darlene Robertson</h2>
+                                    <h2 class="co-comment__date">May 28, 202022</h2>
+                                    <p class="co-comment__content">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis enim velit mollit. Exercitation veniam consequat
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="co-divider-line co-divider-line--dark"></span>
+                            <div class="co-comment">
+                                <img class="co-comment__avatar" src="../../assets/images/News/comment.png" alt="Comment">
+                                <div class="co-comment__info">
+                                    <h2 class="co-comment__author">Darlene Robertson</h2>
+                                    <h2 class="co-comment__date">May 28, 202022</h2>
+                                    <p class="co-comment__content">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis enim velit mollit. Exercitation veniam consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="co-divider-line co-divider-line--dark"></span>
+
+                        <form action="" class="news__details__form">
+                            <h2 class="news__details__form__title">Leave Comment</h2>
+                           <div class="row">
+                               <div class="col-md-6">
+                                   <div class="co-form-group">
+                                       <label class="co-form-label" for="">Name</label>
+                                       <input type="text" class="co-form-input" placeholder="Name">
+                                   </div>
+                               </div>
+                               <div class="col-md-6">
+                                   <div class="co-form-group">
+                                       <label class="co-form-label" for="">Email</label>
+                                       <input type="text" class="co-form-input" placeholder="Email">
+                                   </div>
+                               </div>
+                           </div>
+                            <div class="co-form-group">
+                                <label class="co-form-label" for="">Comment</label>
+                                <textarea placeholder="Comment" rows="4" class="co-form-input"></textarea>
+                            </div>
+                            <div class="text-right">
+                                <a href="" class="btn btn--secondary">Add Comment</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="co-card">
+                        <h2 class="co-card__title">Latest News</h2>
+                        <div class="co-news">
+                            <img class="co-news__image" src="../../assets/images/News/news-1.png" alt="News">
+                            <div>
+                                <a href="" class="co-news__title">24 workers injured in a bus accident exit after
+                                    receiving treatment in Menoufia</a>
+                                <h2 class="co-news__date">
+                                    <i class="icon icon-calender co-news__date__icon"></i>
+                                    <span class="co-news__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                </h2>
+                                <a href="" class="co-news__link">Read More</a>
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-news">
+                            <img class="co-news__image" src="../../assets/images/News/news-1.png" alt="News">
+                            <div>
+                                <a href="" class="co-news__title">24 workers injured in a bus accident exit after
+                                    receiving treatment in Menoufia</a>
+                                <h2 class="co-news__date">
+                                    <i class="icon icon-calender co-news__date__icon"></i>
+                                    <span class="co-news__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                </h2>
+                                <a href="" class="co-news__link">Read More</a>
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-news">
+                            <img class="co-news__image" src="../../assets/images/News/news-1.png" alt="News">
+                            <div>
+                                <a href="" class="co-news__title">24 workers injured in a bus accident exit after
+                                    receiving treatment in Menoufia</a>
+                                <h2 class="co-news__date">
+                                    <i class="icon icon-calender co-news__date__icon"></i>
+                                    <span class="co-news__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                </h2>
+                                <a href="" class="co-news__link">Read More</a>
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-news">
+                            <img class="co-news__image" src="../../assets/images/News/news-1.png" alt="News">
+                            <div>
+                                <a href="" class="co-news__title">24 workers injured in a bus accident exit after
+                                    receiving treatment in Menoufia</a>
+                                <h2 class="co-news__date">
+                                    <i class="icon icon-calender co-news__date__icon"></i>
+                                    <span class="co-news__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                </h2>
+                                <a href="" class="co-news__link">Read More</a>
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-news">
+                            <img class="co-news__image" src="../../assets/images/News/news-1.png" alt="News">
+                            <div>
+                                <a href="" class="co-news__title">24 workers injured in a bus accident exit after
+                                    receiving treatment in Menoufia</a>
+                                <h2 class="co-news__date">
+                                    <i class="icon icon-calender co-news__date__icon"></i>
+                                    <span class="co-news__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                </h2>
+                                <a href="" class="co-news__link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+<!--  MAIN SECTION END   -->
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="" class="footer__logo">
+                <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav__items">
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Home</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Services</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">About</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="co-social">
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-instagram-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-twitter-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-linkedin-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-youtube"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__copy-rights">
+            All rights reserved @ Sadat Online 2022.
+        </div>
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery.fancybox.min.js"></script>
+<script src="../../assets/js/jquery.nice-select.min.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+
+</html>

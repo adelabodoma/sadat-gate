@@ -29,6 +29,13 @@
 
   }
 
+  &__description {
+    font-size: rem(14);
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: $text-color-1;
+  }
+
   &__link {
     color: $primary-color;
     font-weight: 600;
