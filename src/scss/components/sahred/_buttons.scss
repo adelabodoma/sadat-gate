@@ -70,5 +70,11 @@
       color: $primary-color;
     }
   }
+
+  &--link {
+    font-size: rem(14);
+    font-weight: 600;
+    color: $primary-color;
+  }
 }
 

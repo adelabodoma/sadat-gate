@@ -33,5 +33,26 @@
 
   &-group {
     margin-bottom: 20px;
+
+    &__label {
+      font-size: rem(16);
+      font-weight: 400;
+      margin-bottom: 17px;
+    }
+  }
+
+  &-checkbox {
+    @include flex(center, flex-start);
+    &-input {
+      margin-inline-end: 10px;
+      accent-color: $primary-color;
+      width: 22px;
+      height: 22px;
+    }
+
+    &-label {
+      font-size: rem(14);
+      font-weight: 400;
+    }
   }
 }

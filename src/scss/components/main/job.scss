@@ -30,6 +30,7 @@
   }
 
   &__header {
+    width: 100%;
     &__wrapper {
       @include flex(flex-start, space-between)
     }

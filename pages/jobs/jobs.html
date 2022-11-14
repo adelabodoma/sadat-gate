@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../../assets/css/style-ltr.min.css"/>
+    <title>SCA - Jobs</title>
+</head>
+
+<body>
+<button id="gotToTopButton" class="co-scroll-top" title="Go to top">
+    <i class="icon icon-arrow_dropdown"></i>
+</button>
+
+<div class="loader">
+    <div class="loader__item">
+        <img src="../../assets/images/Logo/logo-white.png" alt="Logo"/>
+        <div></div>
+    </div>
+
+</div>
+<!-- HEADER SECTION START -->
+<header class="header internal-pages">
+    <div class="header__top">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__logo">
+                    <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+                </a>
+                <ul class="header__nav__items">
+                    <li class="header__nav__items__item">
+                        <a href=""
+                           class="header__nav__items__item__link header__nav__items__item__link--active">Home</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link" type="button" id="service"
+                           data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span>Services</span>
+                            <i class="icon icon-arrow_dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu header__nav__items__item__dropdown" aria-labelledby="service">
+                            <h2 class="header__nav__items__item__dropdown__heading">Service</h2>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/map.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">City Guide</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/Jobs.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Jobs</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/News.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">News</h2>
+                                </a>
+                            </div>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/real-estates.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Real Estates</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/deaths.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Deaths</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/special-offers.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Special Offers And Discounts</h2>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn--link--primary">View All Services</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">About</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link header__nav__items__item__link--search">
+                            <i class="icon icon-Search"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__language-switcher">
+                    <a href="#" class="header__language-switcher__link"
+                       type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <img src="../../assets/images/Flag/usa.png" alt="USA">
+                        <span class="header__language-switcher__link__label">English</span>
+                        <i class="icon icon-arrow_dropdown"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="changeLang">
+                        <a class="dropdown-item" href="#">
+                            <span>عربي</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__auth">
+                    <button class="btn btn--outline--white">Create New Account</button>
+                    <button class="btn btn--primary">Login</button>
+                </div>
+                <a href="" class="header__toggle">
+                    <i class="icon icon-Menu header__toggle__icon"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="co-breadcrumb">
+            <li class="co-breadcrumb__item">
+                <a href="" class="co-breadcrumb__item__link">Home</a>
+            </li>
+            <li class="co-breadcrumb__item">
+                <a href="" class="co-breadcrumb__item__link">Services</a>
+            </li>
+            <li class="co-breadcrumb__item">
+                <a href="" class="co-breadcrumb__item__link">Jobs</a>
+            </li>
+        </ul>
+        <h2 class="header__top__page-title">Jobs</h2>
+    </div>
+
+    </div>
+</header>
+<!-- HEADER SECTION END -->
+
+
+<!--  MAIN SECTION START   -->
+<main class="master">
+    <div class="container">
+        <section class="jobs">
+            <h2 class="co-section-title co-section-title-center">Jobs Categories</h2>
+            <div class="row">
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/Data.svg" alt="Map" class="co-category__image">
+                            <a href="#" class="co-category__title">Accounting/Finance Jobs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/Web.svg" alt="WEB" class="co-category__image">
+                            <a href="#" class="co-category__title">Administration Jobs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/Shopping.svg" alt="Programming" class="co-category__image">
+                            <a href="#" class="co-category__title">Programming</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/Human%20Resources.svg" alt="Human Resources" class="co-category__image">
+                            <a href="#" class="co-category__title">Human Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/doctor.svg" alt="Medical Jobs" class="co-category__image">
+                            <a href="#" class="co-category__title">Medical Jobs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/Engineering.svg" alt="Education/Teaching Jobs" class="co-category__image">
+                            <a href="#" class="co-category__title">Education/Teaching Jobs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/customer_services.svg" alt="Customer Services" class="co-category__image">
+                            <a href="#" class="co-category__title">Customer Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 m-b-20">
+                    <div class="co-card">
+                        <div class="co-category no-padding">
+                            <img src="../../assets/images/color-Icons/Engineering.svg" alt="Engineering - Other Jobs" class="co-category__image">
+                            <a href="#" class="co-category__title">Engineering - Other Jobs</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="co-section-title co-section-title-center">Jobs Categories</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">24 workers injured in a bus accident exit after
+                                            receiving treatment in Menoufia</a>
+                                        <h2 class="co-job__date">
+                                            <i class="icon icon-calender co-job__date__icon"></i>
+                                            <span class="co-job__date__label">Thursday, January 20, 2022 12:43 PM</span>
+                                        </h2>
+                                    </div>
+
+                                    <a href="" class="btn btn--outline btn--small btn--with-icon">
+                                        <span>Apply</span>
+                                    </a>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <a href="" class="btn btn--outline">View all jobs</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!--  MAIN SECTION END   -->
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="" class="footer__logo">
+                <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav__items">
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Home</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Services</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">About</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="co-social">
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-instagram-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-twitter-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-linkedin-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-youtube"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__copy-rights">
+            All rights reserved @ Sadat Online 2022.
+        </div>
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery.fancybox.min.js"></script>
+<script src="../../assets/js/jquery.nice-select.min.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+
+</html>
