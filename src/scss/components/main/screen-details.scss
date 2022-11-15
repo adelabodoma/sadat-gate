@@ -1,0 +1,48 @@
+.co-details {
+  &__header {
+    @include flex(flex-start, flex-start);
+  }
+
+  &__info {
+    margin-inline-end: auto;
+  }
+
+  &__image {
+    margin-inline-end: 20px;
+  }
+
+  &__title {
+    font-size: rem(20);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    font-size: rem(14);
+    font-weight: 400;
+    color: $text-color-1;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    font-size: rem(13);
+    font-weight: 400;
+    color: $text-color-grey;
+  }
+
+  &__footer {
+    @include flex(center, space-between);
+
+    &__buttons {
+      @include flex(center, flex-start);
+
+      a:not(:last-child){
+        margin-inline-end: 10px;
+      }
+
+      a .icon {
+        font-size: rem(18);
+      }
+    }
+  }
+}

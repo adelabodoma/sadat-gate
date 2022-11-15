@@ -6,6 +6,12 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+
+    &--squire {
+      border-radius: 6px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__title {
@@ -14,6 +20,10 @@
     margin-bottom: 10.5px;
     display: block;
     margin-inline-end: 20px;
+  }
+
+  &__info {
+    flex: 2;
   }
 
   &__date {
@@ -29,6 +39,12 @@
     &__label {
     }
 
+  }
+
+  &__description {
+    font-size: rem(14);
+    font-weight: 400;
+    color: $text-color-1;
   }
 
   &__header {
@@ -53,6 +69,7 @@
     .btn {
       width: 100%;
       justify-content: center;
+      margin-top: 20px;
     }
   }
 }

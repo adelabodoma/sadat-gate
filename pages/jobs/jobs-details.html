@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../../assets/css/style-ltr.min.css"/>
+    <title>SCA - Jobs - Details</title>
+</head>
+
+<body>
+<button id="gotToTopButton" class="co-scroll-top" title="Go to top">
+    <i class="icon icon-arrow_dropdown"></i>
+</button>
+
+<div class="loader">
+    <div class="loader__item">
+        <img src="../../assets/images/Logo/logo-white.png" alt="Logo"/>
+        <div></div>
+    </div>
+
+</div>
+<!-- HEADER SECTION START -->
+<header class="header header-no-breadcrumb">
+    <div class="header__top">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__logo">
+                    <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+                </a>
+                <ul class="header__nav__items">
+                    <li class="header__nav__items__item">
+                        <a href=""
+                           class="header__nav__items__item__link header__nav__items__item__link--active">Home</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link" type="button" id="service"
+                           data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span>Services</span>
+                            <i class="icon icon-arrow_dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu header__nav__items__item__dropdown" aria-labelledby="service">
+                            <h2 class="header__nav__items__item__dropdown__heading">Service</h2>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/map.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">City Guide</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/Jobs.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Jobs</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/News.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">News</h2>
+                                </a>
+                            </div>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/real-estates.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Real Estates</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/deaths.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Deaths</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/special-offers.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Special Offers And Discounts</h2>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn--link--primary">View All Services</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">About</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link header__nav__items__item__link--search">
+                            <i class="icon icon-Search"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__language-switcher">
+                    <a href="#" class="header__language-switcher__link"
+                       type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <img src="../../assets/images/Flag/usa.png" alt="USA">
+                        <span class="header__language-switcher__link__label">English</span>
+                        <i class="icon icon-arrow_dropdown"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="changeLang">
+                        <a class="dropdown-item" href="#">
+                            <span>عربي</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__auth">
+                    <button class="btn btn--outline--white">Create New Account</button>
+                    <button class="btn btn--primary">Login</button>
+                </div>
+                <a href="" class="header__toggle">
+                    <i class="icon icon-Menu header__toggle__icon"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+    </div>
+</header>
+<!-- HEADER SECTION END -->
+
+
+<!--  MAIN SECTION START   -->
+<main class="master">
+    <div class="container">
+        <section class="jobs">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="co-card m-b-20">
+                        <div class="co-details">
+                            <div class="co-details__header">
+                                <img class="co-details__image" src="../../assets/images/Jobs/job.png" alt="Job">
+                                <div class="co-details__info">
+                                    <h2 class="co-details__title">Graphic Designer</h2>
+                                    <p class="co-details__content">Graphic Designer</p>
+                                    <h3 class="co-details__date">Posted Thursday, January 20, 2022 12:43 PM</h3>
+                                </div>
+                                <img class="co-details__image" src="../../assets/images/Jobs/company.png" alt="Job">
+                            </div>
+                            <span class="co-divider-line"></span>
+                            <div class="co-details__footer">
+                                <div class="co-details__footer__buttons">
+                                    <a href="" class="btn btn--secondary">Apply For Job</a>
+                                    <a href="" class="btn btn--outline btn--with-icon">
+                                        <i class="icon icon-Share"></i>
+                                    </a>
+                                </div>
+
+                                <div class="co-details__footer__tags">
+                                    <ul class="co-tag__list">
+                                        <li class="co-tag__list__item">
+                                            <a href="" class="co-tag">
+                                                <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                                <span class="co-tag__label"> Available</span>
+                                            </a>
+                                        </li>
+                                        <li class="co-tag__list__item">
+                                            <a href="" class="co-tag">
+                                                <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                                <span class="co-tag__label"> Job</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <h2 class="co-card__title">Job Details</h2>
+                        <ul class="co-list">
+                            <li class="co-list__item">
+                                <span class="co-list__item__label">Experience Needed:</span>
+                                <span class="co-list__item__value">2 To 4 Years</span>
+                            </li>
+                            <li class="co-list__item">
+                                <span class="co-list__item__label">Career Level:</span>
+                                <span class="co-list__item__value">Entry Level (Junior Level / Fresh Grad)</span>
+                            </li>
+                            <li class="co-list__item">
+                                <span class="co-list__item__label">Education Level:</span>
+                                <span class="co-list__item__value">Bachelor's Degree</span>
+                            </li>
+                            <li class="co-list__item">
+                                <span class="co-list__item__label">Salary:</span>
+                                <span class="co-list__item__value">1,500 EGP</span>
+                            </li>
+                            <li class="co-list__item">
+                                <span class="co-list__item__label">Job Categories:</span>
+                                <span class="co-list__item__value">Creative/Design/Art | Marketing/PR/Advertising | Fashion</span>
+                            </li>
+                            <li class="co-list__item">
+                                <span class="co-list__item__label">Skills:</span>
+                                <span class="co-list__item__value">
+                                    <ul class="co-tag__list">
+                                        <li class="co-tag__list__item">
+                                            <a href="" class="co-tag">
+                                                <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                                <span class="co-tag__label"> Adobe Photoshop</span>
+                                            </a>
+                                        </li>
+                                        <li class="co-tag__list__item">
+                                            <a href="" class="co-tag">
+                                                <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                                <span class="co-tag__label"> Adobe illustrator</span>
+                                            </a>
+                                        </li>
+                                        <li class="co-tag__list__item">
+                                            <a href="" class="co-tag">
+                                                <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                                <span class="co-tag__label"> Graphic</span>
+                                            </a>
+                                        </li>
+                                        <li class="co-tag__list__item">
+                                            <a href="" class="co-tag">
+                                                <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                                <span class="co-tag__label"> indesign</span>
+                                            </a>
+                                        </li>
+                                </ul>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <h2 class="co-card__title">Job Description</h2>
+                        <ul class="co-list-bullet">
+                            <li>Planning concepts by studying relevant information and materials.</li>
+                            <li>Illustrating concepts by designing examples of art arrangement, size, type size and
+                                style and submitting them for approval.
+                            </li>
+                            <li>Preparing finished art by operating necessary equipment and software.</li>
+                            <li>Coordinating with outside agencies, art services, web designer, marketing, printers, and
+                                colleagues as necessary.
+                            </li>
+                            <li>Contributing to team efforts by accomplishing tasks as needed.</li>
+                            <li>Communicating with HOD about layout and design.</li>
+                            <li>Creating a wide range of graphics and layouts for product illustrations, company logos,
+                                and websites with software such as photoshop.
+                            </li>
+                            <li>Reviewing final layouts and suggesting improvements when necessary.</li>
+                            <li>Create and design various materials for print and digital collateral</li>
+                            <li>Ensure projects are completed with high quality and on schedule</li>
+                            <li>Establish creative direction for the company as well as brand guideline</li>
+                            <li>Perform retouching and manipulation of images</li>
+                            <li>Work with a wide range of media and use graphic design software</li>
+                        </ul>
+                    </div>
+                    <div class="co-card m-b-20">
+                        <h2 class="co-card__title">Job Requirements</h2>
+                        <ul class="co-list-bullet">
+                            <li>bachelor's degree in graphic arts, design, communications, or related field</li>
+                            <li>2-5 years of experience in graphic design</li>
+                            <li>Knowledge of Adobe Photoshop, Illustrator, Sketch, InDesign, and other graphic design software</li>
+                            <li>Compelling portfolio of work over a wide range of creative projects (Fashion related is a great plus)</li>
+                            <li>Strong analytical skills</li>
+                            <li>Excellent eye for detail</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="co-card">
+                        <h2 class="co-card__title">Similar Jobs</h2>
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">Morpher: Sign up + KYC + Screenshot</a>
+                                    </div>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">Morpher: Sign up + KYC + Screenshot</a>
+                                    </div>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">Morpher: Sign up + KYC + Screenshot</a>
+                                    </div>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">Morpher: Sign up + KYC + Screenshot</a>
+                                    </div>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">Morpher: Sign up + KYC + Screenshot</a>
+                                    </div>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <span class="co-divider-line"></span>
+                        <div class="co-job">
+                            <img class="co-job__image" src="../../assets/images/Jobs/job.png" alt="News">
+                            <div class="co-job__header">
+                                <div class="co-job__header__wrapper">
+                                    <div>
+                                        <a href="" class="co-job__title">Morpher: Sign up + KYC + Screenshot</a>
+                                    </div>
+                                </div>
+
+                                <h2 class="co-job__package">1,500 EGP</h2>
+                                <ul class="co-tag__list">
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li class="co-tag__list__item">
+                                        <a href="" class="co-tag">
+                                            <i class="icon icon-Property-1Tag1 co-tag__icon"></i>
+                                            <span class="co-tag__label"> Rent</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!--  MAIN SECTION END   -->
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="" class="footer__logo">
+                <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav__items">
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Home</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Services</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">About</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="co-social">
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-instagram-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-twitter-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-linkedin-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-youtube"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__copy-rights">
+            All rights reserved @ Sadat Online 2022.
+        </div>
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery.fancybox.min.js"></script>
+<script src="../../assets/js/jquery.nice-select.min.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+
+</html>

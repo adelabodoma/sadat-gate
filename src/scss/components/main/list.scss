@@ -1,0 +1,30 @@
+.co-list {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__label {
+      font-size: rem(14);
+      font-weight: 400;
+      color: $text-color-grey;
+      display: inline-block;
+      width: 20%;
+    }
+
+    &__value {
+      font-size: rem(14);
+      font-weight: 500;
+      display: inline-block;
+    }
+  }
+
+  &-bullet {
+    list-style: disc;
+    margin-inline-start: 15px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}

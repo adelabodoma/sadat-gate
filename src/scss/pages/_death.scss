@@ -1,0 +1,33 @@
+.death {
+  &__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    font-size: rem(14);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    font-size: rem(12);
+    color: $text-color-grey;
+    margin-bottom: 10px;
+    @include flex(center);
+
+    &__icon {
+      margin-inline-end: 6px;
+    }
+
+    &__label {
+    }
+
+  }
+
+  &__info {
+    color: $text-color-grey;
+    font-size: rem(14);
+
+  }
+}

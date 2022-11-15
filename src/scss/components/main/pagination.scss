@@ -1,5 +1,6 @@
 .co-pagination {
   width: 100%;
+  margin-bottom: 30px;
   @include flex(center, center);
 
   &__items {
