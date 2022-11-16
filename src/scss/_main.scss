@@ -24,10 +24,10 @@
 'components/main/service', 'components/main/pagination',
 'components/main/comment', 'components/sahred/form',
 'components/main/titles', 'components/main/screen-details',
-'components/main/list';
+'components/main/list', 'components/sahred/search-box', 'components/main/statistics', 'components/main/about-service';
 
 // PAGES
-@import "pages/home", "pages/news", "pages/jobs", "pages/death", 'pages/auth';
+@import "pages/home", "pages/news", "pages/jobs", "pages/death", 'pages/auth', 'pages/not-found', 'pages/about';
 
 // LAYOUT
 @import "layout/header", "layout/footer";

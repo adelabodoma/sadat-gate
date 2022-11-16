@@ -96,7 +96,8 @@
                             <a href="" class="header__nav__items__item__link">Pricing</a>
                         </li>
                         <li class="header__nav__items__item">
-                            <a href="" class="header__nav__items__item__link header__nav__items__item__link--search">
+                            <a id="openSearchForm" href=""
+                               class="header__nav__items__item__link header__nav__items__item__link--search">
                                 <i class="icon icon-Search"></i>
                             </a>
                         </li>
@@ -130,7 +131,6 @@
                 </nav>
             </div>
         </div>
-
         <div class="header__main">
             <div class="container">
                 <div class="swiper header__swiper">
@@ -196,16 +196,29 @@
         </div>
         </div>
     </header>
-    <!-- HEADER SECTION END -->
+<!-- HEADER SECTION END -->
 
-    <!--  MAIN SECTION START   -->
-    <main class="main">
-        <div class="container">
-            <!--  CATEGORY SECTION START  -->
-            <section class="categories">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="co-category">
+<!-- SEARCH SECTION START -->
+<section class="search" id="searchForm">
+    <form action="" class="co-search search__form">
+        <input type="text" class="co-form-input co-search__input" placeholder="Books">
+        <a href="" class="btn btn--secondary co-search__button">Search Again</a>
+        <a href="">
+            <i class="icon icon-exit search__form__close" id="closeSearchForm"></i>
+        </a>
+    </form>
+</section>
+<!-- SEARCH SECTION START -->
+
+
+<!--  MAIN SECTION START   -->
+<main class="main">
+    <div class="container">
+        <!--  CATEGORY SECTION START  -->
+        <section class="categories">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="co-category">
                             <img src="assets/images/color-Icons/map.svg" alt="Map" class="co-category__image">
                             <a href="#" class="co-category__title">City Guide</a>
                         </div>

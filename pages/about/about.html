@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../../assets/css/style-ltr.min.css"/>
+    <title>SCA - About</title>
+</head>
+
+<body>
+<button id="gotToTopButton" class="co-scroll-top" title="Go to top">
+    <i class="icon icon-arrow_dropdown"></i>
+</button>
+
+<div class="loader">
+    <div class="loader__item">
+        <img src="../../assets/images/Logo/logo-white.png" alt="Logo"/>
+        <div></div>
+    </div>
+
+</div>
+<!-- HEADER SECTION START -->
+<header class="header internal-pages">
+    <div class="header__top">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__logo">
+                    <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+                </a>
+                <ul class="header__nav__items">
+                    <li class="header__nav__items__item">
+                        <a href=""
+                           class="header__nav__items__item__link header__nav__items__item__link--active">Home</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link" type="button" id="service"
+                           data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span>Services</span>
+                            <i class="icon icon-arrow_dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu header__nav__items__item__dropdown" aria-labelledby="service">
+                            <h2 class="header__nav__items__item__dropdown__heading">Service</h2>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/map.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">City Guide</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/Jobs.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Jobs</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image" src="../../assets/images/color-Icons/News.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">News</h2>
+                                </a>
+                            </div>
+                            <div class="header__nav__items__item__dropdown__items">
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/real-estates.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Real Estates</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/deaths.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Deaths</h2>
+                                </a>
+                                <a href="#" class="co-dropdown-card">
+                                    <img class="co-dropdown-card__image"
+                                         src="../../assets/images/color-Icons/special-offers.svg"
+                                         alt="Map">
+                                    <h2 class="co-dropdown-card__label">Special Offers And Discounts</h2>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn--link--primary">View All Services</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">About</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="header__nav__items__item">
+                        <a href="" class="header__nav__items__item__link header__nav__items__item__link--search">
+                            <i class="icon icon-Search"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__language-switcher">
+                    <a href="#" class="header__language-switcher__link"
+                       type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <img src="../../assets/images/Flag/usa.png" alt="USA">
+                        <span class="header__language-switcher__link__label">English</span>
+                        <i class="icon icon-arrow_dropdown"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="changeLang">
+                        <a class="dropdown-item" href="#">
+                            <span>عربي</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__auth">
+                    <button class="btn btn--outline--white">Create New Account</button>
+                    <button class="btn btn--primary">Login</button>
+                </div>
+                <a href="" class="header__toggle">
+                    <i class="icon icon-Menu header__toggle__icon"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="co-breadcrumb">
+            <li class="co-breadcrumb__item">
+                <a href="" class="co-breadcrumb__item__link">Home</a>
+            </li>
+            <li class="co-breadcrumb__item">
+                <a href="" class="co-breadcrumb__item__link">About</a>
+            </li>
+        </ul>
+        <h2 class="header__top__page-title">About</h2>
+    </div>
+
+    </div>
+</header>
+<!-- HEADER SECTION END -->
+
+
+<!--  MAIN SECTION START   -->
+<main class="master">
+    <section class="about">
+        <div class="container">
+            <div class="co-card about__wrapper">
+                <div class="row">
+                    <div class="col-md-6 about__info">
+                        <h2 class="about__heading">Welcome to Sadat Gate</h2>
+                        <p class="about__description m-b-20">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                            do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                            consequat</p>
+                        <p class="about__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                            amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat</p>
+
+                        <div class="about__signature">
+                            <img class="about__signature__image" src="../../assets/images/About/signature.png"
+                                 alt="About">
+                            <div>
+                                <h2 class="about__signature__title">Video Intro</h2>
+                                <p class="about__signature__info">about__signature</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="about__image" src="../../assets/images/About/about.png" alt="About">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__statistics">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="co-statistics m-b-20">
+                            <h2 class="co-statistics__label">80k</h2>
+                            <h3 class="co-statistics__value">Total People lived in our city</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="co-statistics m-b-20">
+                            <h2 class="co-statistics__label">10k</h2>
+                            <h3 class="co-statistics__value">Square kilometres
+                                region covers</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="co-statistics m-b-20">
+                            <h2 class="co-statistics__label">25%</h2>
+                            <h3 class="co-statistics__value">Private & domestic
+                                garden land</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="co-statistics">
+                            <h2 class="co-statistics__label">6th</h2>
+                            <h3 class="co-statistics__value">Average Costs of Home
+                                Ownership</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__services">
+            <div class="container">
+                <h2 class="co-section-title co-section-title-center">Services Provide For You</h2>
+                <div class="row">
+                    <div class="col-md-4 m-b-20">
+                        <div class="co-card">
+                            <div class="co-about-service">
+                                <img src="../../assets/images/color-Icons/customer_services.svg"
+                                     class="co-about-service__image">
+                                <h2 class="co-about-service__title">Awarded Design</h2>
+                                <p class="co-about-service__description">
+                                    There are many variations variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 m-b-20">
+                        <div class="co-card">
+                            <div class="co-about-service">
+                                <img src="../../assets/images/color-Icons/congratulations.svg"
+                                     class="co-about-service__image">
+                                <h2 class="co-about-service__title">Awarded Design</h2>
+                                <p class="co-about-service__description">
+                                    There are many variations variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 m-b-20">
+                        <div class="co-card">
+                            <div class="co-about-service">
+                                <img src="../../assets/images/color-Icons/Clubs.svg"
+                                     class="co-about-service__image">
+                                <h2 class="co-about-service__title">Awarded Design</h2>
+                                <p class="co-about-service__description">
+                                    There are many variations variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 m-b-20">
+                        <div class="co-card">
+                            <div class="co-about-service">
+                                <img src="../../assets/images/color-Icons/customer_services.svg"
+                                     class="co-about-service__image">
+                                <h2 class="co-about-service__title">Awarded Design</h2>
+                                <p class="co-about-service__description">
+                                    There are many variations variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 m-b-20">
+                        <div class="co-card">
+                            <div class="co-about-service">
+                                <img src="../../assets/images/color-Icons/congratulations.svg"
+                                     class="co-about-service__image">
+                                <h2 class="co-about-service__title">Awarded Design</h2>
+                                <p class="co-about-service__description">
+                                    There are many variations variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 m-b-20">
+                        <div class="co-card">
+                            <div class="co-about-service">
+                                <img src="../../assets/images/color-Icons/Clubs.svg"
+                                     class="co-about-service__image">
+                                <h2 class="co-about-service__title">Awarded Design</h2>
+                                <p class="co-about-service__description">
+                                    There are many variations variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../../assets/images/About/frame.png" alt="Frame">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="about__contact-us__title">Doob Specializes In</h3>
+                        <h2 class="about__contact-us__brief">small Corporate Business.</h2>
+                        <ul class="about__contact-us__list m-b-40">
+                            <li class="about__contact-us__list__item">
+                                <i class="icon icon-check_2 about__contact-us__list__item__icon"></i>
+                               <div class="about__contact-us__list__item__container">
+                                   <span>A good traveler has no fixed plans</span>
+                                   <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </span>
+                               </div>
+                            </li>
+                            <li class="about__contact-us__list__item">
+                                <i class="icon icon-check_2 about__contact-us__list__item__icon"></i>
+                                <div class="about__contact-us__list__item__container">
+                                    <span>A good traveler has no fixed plans</span>
+                                    <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn--secondary">Contact us</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--  MAIN SECTION END   -->
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="" class="footer__logo">
+                <img src="../../assets/images/Logo/logo-white.png" alt="Logo">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav__items">
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Home</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Services</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">About</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Pricing</a>
+                    </li>
+                    <li class="footer__nav__items__item">
+                        <a href="" class="footer__nav__items__item__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="co-social">
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-instagram-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-twitter-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-linkedin-1"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-youtube"></i>
+                    </a>
+                </li>
+                <li class="co-social__item">
+                    <a href="" class="co-social__item__link">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__copy-rights">
+            All rights reserved @ Sadat Online 2022.
+        </div>
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../../assets/js/jquery.fancybox.min.js"></script>
+<script src="../../assets/js/jquery.nice-select.min.js"></script>
+<script src="../../assets/js/swiper.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+
+</html>

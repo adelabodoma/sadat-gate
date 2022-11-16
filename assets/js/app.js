@@ -41,6 +41,18 @@ jQuery(document).ready(function ($) {
   })
 
 
+  // SEARCH CODE
+  $('#openSearchForm').on('click', function (e){
+    e.preventDefault();
+    $('#searchForm').show();
+  })
+
+  $('#closeSearchForm').on('click', function (e){
+    e.preventDefault();
+    $('#searchForm').hide()
+  })
+
+
 
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");

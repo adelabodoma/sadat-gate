@@ -1,0 +1,19 @@
+.co-about-service {
+  text-align: center;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: rem(20);
+    font-weight: 500;
+    margin-bottom: 20px;
+
+  }
+
+  &__description {
+    font-size: rem(14);
+    font-weight: 400;
+  }
+}
