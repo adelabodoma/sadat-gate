@@ -1,0 +1,65 @@
+.co-pricing {
+  padding: 50px 30px;
+  border-radius: 30px;
+  background-color: $color-white;
+
+  &__title {
+    font-size: rem(24);
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    margin-bottom: 15px;
+
+    &__amount {
+      font-size: rem(32);
+      font-weight: 600;
+      color: $primary-color;
+    }
+
+    &__per {
+      font-size: rem(14);
+      font-weight: 400;
+      color: $text-color-1;
+    }
+  }
+
+  &__description {
+    font-size: rem(16);
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  &__benefits {
+    margin-bottom: 30px;
+
+    &__benefit {
+      @include flex(center, flex-start);
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      &__icon {
+        margin-inline-end: 10px;
+        color: $primary-color;
+        font-size: rem(20);
+      }
+
+      &__label {
+        font-size: rem(16);
+        font-weight: 400;
+      }
+    }
+  }
+
+  &--primary {
+    background-color: $primary-color;
+    padding: 80px 30px;
+
+    *:not(.btn) {
+      color: $color-white;
+    }
+  }
+}

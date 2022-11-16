@@ -1,0 +1,43 @@
+.contact-us {
+  &__label {
+    font-size: rem(16);
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: $text-color-1;
+  }
+
+  &__title {
+    font-size: rem(32);
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  &__options {
+    &__option {
+      @include flex(center, flex-start);
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      &__icon {
+        margin-inline-end: 10px;
+        font-size: rem(20);
+        color: $primary-color;
+      }
+
+      &__label {
+        font-size: rem(16);
+        font-weight: 400;
+        color: $text-color-1;
+      }
+    }
+  }
+
+  &__form {
+    &__heading {
+      font-size: rem(32);
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+  }
+}

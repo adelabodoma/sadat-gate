@@ -1,0 +1,23 @@
+.pricing {
+
+  &__heading {
+    font-size: rem(32);
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__label {
+    font-size: rem(16);
+    font-weight: 400;
+    width: 30%;
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+
+  @include media-breakpoint-down(sm){
+    &__label {
+      width: 100%;
+    }
+  }
+}
