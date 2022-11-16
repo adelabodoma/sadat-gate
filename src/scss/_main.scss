@@ -25,11 +25,11 @@
 'components/main/comment', 'components/sahred/form',
 'components/main/titles', 'components/main/screen-details',
 'components/main/list', 'components/sahred/search-box',
-'components/main/statistics', 'components/main/about-service', 'components/main/pricing';
+'components/main/statistics', 'components/main/about-service', 'components/main/pricing', 'components/sahred/table';
 
 // PAGES
 @import "pages/home", "pages/news", "pages/jobs", "pages/death",
-'pages/auth', 'pages/not-found', 'pages/about', 'pages/contct-us', 'pages/pricing';
+'pages/auth', 'pages/not-found', 'pages/about', 'pages/contct-us', 'pages/pricing', 'pages/account';
 
 // LAYOUT
 @import "layout/header", "layout/footer";

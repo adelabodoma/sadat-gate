@@ -1,0 +1,115 @@
+.account {
+  &__tabs {
+    &__tab {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &__link {
+        padding: 15px 20px;
+        border-radius: $main-border-radius;
+        @include flex(center, flex-start);
+        transition: $transition-type;
+
+        &__icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          @include flex(center, center);
+          font-size: rem(17);
+          color: $text-color-1;
+          margin-inline-end: 10px;
+          background-color: #F2F3F5;
+          transition: $transition-type;
+
+        }
+
+        &__label {
+          font-size: rem(16);
+          font-weight: 400;
+        }
+
+        &--active, &:hover {
+          background-color: rgba(41, 84, 222, 0.05);
+
+          .account__tabs__tab__link__label {
+            color: $primary-color;
+          }
+
+          .account__tabs__tab__link__icon {
+            color: $color-white;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(14);
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #787A7D;
+  }
+
+  &__current-plan {
+    background-color: rgba(41, 84, 222, 0.05);
+    border-radius: $main-border-radius;
+    padding: 20px;
+    border: 1px solid rgba(41, 84, 222, 0.15);
+    margin-bottom: 30px;
+
+    &__info {
+      @include flex(flex-start, flex-start);
+
+      &__name {
+        margin-bottom: 8px;
+
+        &__label {
+          font-size: rem(16);
+          font-weight: 600;
+        }
+
+        &__expire {
+          font-size: rem(12);
+          font-weight: 400;
+          color: $text-color-red;
+        }
+      }
+
+      &__date {
+        font-size: rem(12);
+        font-weight: 400;
+        color: $text-color-grey;
+        margin-bottom: 20px;
+      }
+
+      &__price {
+        margin-inline-start: auto;
+
+        &__amount {
+          font-size: rem(20);
+          font-weight: 600;
+          color: $primary-color;
+        }
+
+        &__per {
+          font-size: rem(13);
+          font-weight: 400;
+          color: $text-color-grey;
+        }
+      }
+    }
+
+    &__footer {
+      text-align: end;
+      @include flex(center, flex-end);
+
+      &__cancel {
+        color: $text-color-red;
+        font-weight: 600;
+        margin-inline-end: 15px;
+      }
+    }
+  }
+}

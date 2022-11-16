@@ -21,6 +21,7 @@
   &--secondary {
     background: $primary-color;
     color: $color-white;
+    border-color: $primary-color;
 
     &:hover {
       background-color: $color-white;
