@@ -46,6 +46,16 @@
     }
   }
 
+  &--horizontal {
+      @include flex(center, flex-start);
+    text-align: start;
+
+    &__info {
+      margin-inline-start: 15px;
+      margin-inline-end: auto;
+    }
+  }
+
   @include media-breakpoint-down(sm) {
     margin-bottom: 20px;
   }

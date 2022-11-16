@@ -27,7 +27,7 @@
 'components/main/list';
 
 // PAGES
-@import "pages/home", "pages/news", "pages/jobs", "pages/death";
+@import "pages/home", "pages/news", "pages/jobs", "pages/death", 'pages/auth';
 
 // LAYOUT
 @import "layout/header", "layout/footer";
