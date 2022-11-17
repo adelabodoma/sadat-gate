@@ -16,7 +16,7 @@
     font-weight: 500;
   }
 
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(md){
     margin-bottom: 20px;
     height: auto;
   }

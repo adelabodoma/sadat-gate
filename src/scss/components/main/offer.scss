@@ -47,12 +47,24 @@
   }
 
   &--horizontal {
-      @include flex(center, flex-start);
+    @include flex(center, flex-start);
     text-align: start;
 
     &__info {
       margin-inline-start: 15px;
       margin-inline-end: auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+
+      img {
+        margin-bottom: 15px;
+      }
+
+      &__info {
+        margin-bottom: 15px;
+      }
     }
   }
 

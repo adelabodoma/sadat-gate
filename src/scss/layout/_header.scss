@@ -11,15 +11,19 @@
     border-radius: 0 0 30px 30px;
     color: $color-white;
 
-    @include media-breakpoint-down(sm) {
-      border-radius: 0;
-      padding: 15px 0;
-    }
-
     &__page-title {
       font-size: rem(50);
       font-weight: 600;
       color: $color-white;
+    }
+
+    @include media-breakpoint-down(sm) {
+      border-radius: 0;
+      padding: 15px 0;
+
+      &__page-title {
+        font-size: rem(25);
+      }
     }
   }
 
@@ -107,7 +111,6 @@
       }
     }
   }
-
 
   &__toggle {
     display: none;
@@ -209,6 +212,10 @@
   &.internal-pages {
     height: 323px;
     margin-bottom: 80px;
+
+    @include media-breakpoint-down(sm){
+      height: 250px;
+    }
   }
 
   &.header-no-breadcrumb {

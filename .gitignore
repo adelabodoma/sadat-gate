@@ -19,6 +19,8 @@ SalamFairs.xd
 .env.test.local
 .env.production.local
 
+./sadat-gate.final.zip
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

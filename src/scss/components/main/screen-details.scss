@@ -45,4 +45,21 @@
       }
     }
   }
+
+  @include media-breakpoint-down(sm){
+    &__header {
+      flex-direction: column;
+    }
+
+    &__image {
+      margin-bottom: 10px;
+    }
+
+    &__footer {
+      flex-direction: column;
+      &__buttons {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

@@ -71,6 +71,7 @@
   }
 
   @include media-breakpoint-down(sm) {
+    padding: 0;
     &__form {
       margin-top: 0;
     }
