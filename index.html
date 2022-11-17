@@ -125,7 +125,7 @@
                         <button class="btn btn--outline--white">Create New Account</button>
                         <button class="btn btn--primary">Login</button>
                     </div>
-                    <a href="" class="header__toggle">
+                    <a href="" class="header__toggle" id="openMenu">
                         <i class="icon icon-Menu header__toggle__icon"></i>
                     </a>
                 </nav>
@@ -194,6 +194,80 @@
                 </div>
             </div>
         </div>
+        <div class="co-mobile-menu" id="mobileMenu">
+            <nav class="nav-drill">
+                <a href="#" id="closeMenu">
+                    <i class="icon icon-cancel"></i>
+                </a>
+                <ul class="nav-items nav-level-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> About </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#"> Services </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Service One </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    Category one
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#"> Media And Services </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Media And Services 1 </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    Media And Services 2
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Category Nested One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Contact Us </a>
+                    </li>
+
+                    <li>
+                        <div class="p-3">
+                            <button class="btn btn--outline btn-block mb-2">Create New Account</button>
+                            <button class="btn btn--secondary btn-block">Login</button>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
         </div>
     </header>
 <!-- HEADER SECTION END -->
@@ -217,37 +291,37 @@
         <!--  CATEGORY SECTION START  -->
         <section class="categories">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-lg-2 m-b-20">
                     <div class="co-category">
                             <img src="assets/images/color-Icons/map.svg" alt="Map" class="co-category__image">
                             <a href="#" class="co-category__title">City Guide</a>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 m-b-20">
                         <div class="co-category">
                             <img src="assets/images/color-Icons/Jobs.svg" alt="Map" class="co-category__image">
                             <a href="#" class="co-category__title">Jobs</a>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 m-b-20">
                         <div class="co-category">
                             <img src="assets/images/color-Icons/News.svg" alt="Map" class="co-category__image">
                             <a href="#" class="co-category__title">News</a>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 m-b-20">
                         <div class="co-category">
                             <img src="assets/images/color-Icons/real-estates.svg" alt="Map" class="co-category__image">
                             <a href="#" class="co-category__title">Real Estates</a>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 m-b-20">
                         <div class="co-category">
                             <img src="assets/images/color-Icons/deaths.svg" alt="Map" class="co-category__image">
                             <a href="#" class="co-category__title">Deaths</a>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 m-b-20">
                         <div class="co-category">
                             <img src="assets/images/color-Icons/special-offers.svg" alt="Map"
                                  class="co-category__image">
@@ -261,7 +335,7 @@
             <span class="co-vertical-divider"></span>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <!-- NEWS WIDGET START -->
                     <div class="co-card">
                         <section class="co-section-header">
@@ -531,7 +605,7 @@
                     <!-- ESTATE WIDGET END -->
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <!-- JOBS WIDGET START -->
                     <div class="co-card">
                         <section class="co-section-header">

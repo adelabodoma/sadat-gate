@@ -88,7 +88,7 @@
       }
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       &__items {
         display: none;
       }
@@ -111,12 +111,13 @@
 
   &__toggle {
     display: none;
+    margin-inline-start: 15px;
 
     &__icon {
-      font-size: rem(30);
+      font-size: rem(40);
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: inline-block;
     }
   }

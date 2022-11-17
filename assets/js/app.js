@@ -29,29 +29,35 @@ jQuery(document).ready(function ($) {
     $(".loader").fadeOut("slow");
   }, 1000);
 
-  $('#openMenu').on('click', function (e){
-    e.preventDefault()
-    $('.header__menu').css('top', '0')
-  })
-
-
-  $('#closeMenu').on('click', function (e){
-    e.preventDefault()
-    $('.header__menu').css('top', ' -100%')
-  })
 
 
   // SEARCH CODE
-  $('#openSearchForm').on('click', function (e){
+  $('#openSearchForm').on('click', function (e) {
     e.preventDefault();
     $('#searchForm').show();
   })
 
-  $('#closeSearchForm').on('click', function (e){
+  $('#closeSearchForm').on('click', function (e) {
     e.preventDefault();
     $('#searchForm').hide()
   })
 
+  // MOBILE MENU EVENTS
+  const openMenuBtn = document.getElementById("openMenu");
+  const closeMenuBtn = document.getElementById("closeMenu");
+
+  openMenuBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    $("#mobileMenu").fadeIn("slow");
+  });
+
+  closeMenuBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    $("#mobileMenu").fadeOut("slow");
+  });
+
+  // RENDER MOBILE MENU
+  mobileNavMenuRender();
 
 
   const topButton = document.getElementById("gotToTopButton");
@@ -101,3 +107,38 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+
+function mobileNavMenuRender() {
+  const navExpand = [].slice.call(document.querySelectorAll(".nav-expand"));
+  const backLink = `<li class="nav-item">
+	<a class="nav-link nav-back-link" href="javascript:;">
+		Back
+	</a>
+</li>`;
+
+  navExpand.forEach((item) => {
+    item
+        .querySelector(".nav-expand-content")
+        .insertAdjacentHTML("afterbegin", backLink);
+    item
+        .querySelector(".nav-link")
+        .addEventListener("click", () => item.classList.add("active"));
+    item
+        .querySelector(".nav-back-link")
+        .addEventListener("click", () => item.classList.remove("active"));
+  });
+
+  // ---------------------------------------
+  // not-so-important stuff starts here
+
+  const openMenuBtn = document.getElementById("openMenu");
+  const closeMenuBtn = document.getElementById("closeMenu");
+
+  openMenuBtn.addEventListener("click", function () {
+    $(".header__mobile").fadeIn("slow");
+  });
+
+  closeMenuBtn.addEventListener("click", function () {
+    $(".header__mobile").fadeOut("slow");
+  });
+}
