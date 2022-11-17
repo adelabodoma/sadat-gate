@@ -48,6 +48,14 @@
             .icon {
               font-size: rem(17);
             }
+
+            &--mobile {
+              display: none;
+
+              @include media-breakpoint-down(md){
+                display: inline-block;
+              }
+            }
           }
 
           &--active {

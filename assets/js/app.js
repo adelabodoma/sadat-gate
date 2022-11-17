@@ -37,6 +37,11 @@ jQuery(document).ready(function ($) {
     $('#searchForm').show();
   })
 
+  $('#openSearchFormMobile').on('click', function (e) {
+    e.preventDefault();
+    $('#searchForm').show();
+  })
+
   $('#closeSearchForm').on('click', function (e) {
     e.preventDefault();
     $('#searchForm').hide()

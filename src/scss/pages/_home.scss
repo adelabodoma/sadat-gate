@@ -37,4 +37,16 @@
       display: block;
     }
   }
+
+  @include media-breakpoint-down(sm){
+    &__form {
+      width: 90%;
+
+      &__close {
+        bottom: unset;
+        top: -50px;
+        #{$right}: 0;
+      }
+    }
+  }
 }
